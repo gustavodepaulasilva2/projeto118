@@ -43,9 +43,9 @@ def save():
     data_entry = date + "," + product + "," + review + "," + sentiment
 
     # abra o arquivo no modo 'append'
-    file_handler = open('.\static\assets\datafiles\updated_product_dataset.csv', 'a')
+    file_handler = open('./static/assets/datafiles/updated_product_dataset.csv', 'a')
     # Registre os dados no arquivo
-    file_handler.write(data_entry + "\n")
+    file_handler.write(data_entry + "/n")
     # retorne uma mensagem de sucesso
     return jsonify({'status' : 'success' , 
                     'message' : 'Dados Registrados'})
